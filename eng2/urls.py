@@ -20,4 +20,5 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^kunz/', include('kunz.urls')),
+    url(r'^cad_user/$', views.cad_user, name='cad_user'),
 ]
